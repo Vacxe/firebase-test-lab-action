@@ -1,0 +1,51 @@
+name: 'Firebase Test Lab Action'
+description: 'A GitHub Action to run test on Firebase Test Lab'
+author: 'Konstantin Aksenov'
+inputs:
+  app:
+    description: 'Path to APK'
+    required: true
+  test:
+    description: 'Path to instrument APK'
+    required: true
+  device-id:
+    description: 'Device ID'
+    required: true
+  os-version-id:
+    description: 'OS Versions ID'
+    required: true
+  orientation:
+    description: 'Device orientation'
+    required: false
+    default: portrait
+  locale:
+    description: 'Device locale'
+    required: false
+    default: en
+  type:
+    description: 'Three main types of Android tests are currently supported: instrumentation, robo, game-loop'
+    required: false
+    default: instrumentation
+  num-flaky-test-attempts:
+    description: 'Retry for flaky tests'
+    required: false
+    default: '1'
+  timeout:
+    description: 'Timeout, default 100 seconds'
+    required: false
+    default: '100'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.app }}
+    - ${{ inputs.test }}
+    - ${{ inputs.device-id }}
+    - ${{ inputs.os-version-id }}
+    - ${{ inputs.orientation }}
+    - ${{ inputs.locale }}
+    - ${{ inputs.type }}
+    - ${{ inputs.num-flaky-test-attempts }}
+branding:
+  icon: 'cloud'
+  color: 'blue'
