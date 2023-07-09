@@ -3,7 +3,7 @@ description: 'A GitHub Action to run test on Firebase Test Lab'
 author: 'Konstantin Aksenov'
 inputs:
   app:
-    description: 'Path to APK'
+    description: 'Path to apk'
     required: true
   test:
     description: 'Path to instrument APK'

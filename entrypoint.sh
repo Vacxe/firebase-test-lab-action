@@ -13,8 +13,8 @@ test=$2
 device-id=$3
 os-version-id=$4
 orientation=$5
-type=$7
-locale=$6
+type=$6
+locale=$7
 num-flaky-test-attempts=$8
 timeout=$9
 
