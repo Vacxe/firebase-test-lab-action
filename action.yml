@@ -46,6 +46,7 @@ runs:
     - ${{ inputs.locale }}
     - ${{ inputs.type }}
     - ${{ inputs.num-flaky-test-attempts }}
+    - ${{ inputs.timeout }}
 branding:
   icon: 'cloud'
   color: 'blue'

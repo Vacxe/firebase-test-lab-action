@@ -13,8 +13,8 @@ test=$2
 deviceid=$3
 osversionid=$4
 orientation=$5
-type=$6
-locale=$7
+locale=$6
+type=$7
 numflakytestattempts=$8
 timeout=$9
 
