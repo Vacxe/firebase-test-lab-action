@@ -1,4 +1,4 @@
-name: 'Firebase Test Lab Action'
+name: 'Firebase Test Lab'
 description: 'A GitHub Action to run test on Firebase Test Lab'
 author: 'Konstantin Aksenov'
 inputs:
