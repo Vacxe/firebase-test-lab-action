@@ -29,7 +29,7 @@ inputs:
   num-flaky-test-attempts:
     description: 'Retry for flaky tests'
     required: false
-    default: '1'
+    default: '0'
   timeout:
     description: 'Timeout, default 100 seconds'
     required: false
