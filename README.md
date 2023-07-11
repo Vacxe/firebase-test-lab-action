@@ -16,3 +16,5 @@ Minimum declaration sample:
     env:
       SERVICE_ACCOUNT: ${{ secrets.FIREBASE_TESTLAB_JSON }}      
 ```
+
+[Real project YAML example with matrix usage](https://github.com/KakaoCup/Kakao/blob/master/.github/workflows/pr-checks.yml)
