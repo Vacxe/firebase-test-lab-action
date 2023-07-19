@@ -7,7 +7,7 @@ Minimum declaration sample:
 
 ```yaml
   - name: Run tests on Firebase Test Lab for API 33
-    uses: vacxe/firebase-test-lab-action@0.0.1
+    uses: vacxe/firebase-test-lab-action@<VERSION>
     with:
       apk: apk/sample-debug.apk
       test: apk/sample-debug-androidTest.apk
