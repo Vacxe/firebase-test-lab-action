@@ -1,4 +1,4 @@
-FROM google/cloud-sdk:437.0.1-alpine
+FROM google/cloud-sdk:449.0.0-alpine
 
 RUN apk update && apk add --no-cache jq
 
